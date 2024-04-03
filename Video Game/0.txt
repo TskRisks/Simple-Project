@@ -1,0 +1,8 @@
+Vg with the most sale globally
+publisher with the highest sales globally
+publisher with the most release games
+most used platform each year.
+Most played genre every year(top 5 if unsure)
+Avg sales in every country each year.
+Top 5 game in each country
+Determine which gaming platforms are most popular based on sales

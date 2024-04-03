@@ -1,0 +1,36 @@
+---------------------------------------Upper part-----------------------------------------------
+SUM(global_sales * jp_sales) = 5,574.14
+SUM(global_sales) = 8,820.36
+SUM(jp_sales) = 1,284.29
+COUNT(*) = 16,327
+SUM(Global_Sales) * SUM(Other_Sales) / COUNT(*) =426.24
+
+
+SUM(Global_Sales * JP_Sales) - SUM(Global_Sales) * SUM(JP_Sales) / COUNT(*) = 4,880.33
+-----------------------------------------------------------------------------------------------
+
+---------------------------------------Middle part---------------------------------------------
+SUM(global_sales * global_sales) = 44,788.49
+POW(SUM(global_sales),2) = 77,798,750.52
+POW(SUM(global_sales),2) / COUNT(*) = 4,765.03
+
+SUM(global_sales * global_sales) - POW(SUM(global_sales),2) / COUNT(*) = 40,023.46
+-----------------------------------------------------------------------------------------------
+
+---------------------------------------Bottom part---------------------------------------------
+SUM(JP_Sales * JP_Sales) = 1,685.75
+POW(SUM(JP_Sales),2) = 1,649,426.48
+POW(SUM(JP_Sales),2) / COUNT(*) = 101.02
+SUM(JP_Sales * JP_Sales) - POW(SUM(JP_Sales), 2) / COUNT(*) = 1,584.73
+
+(SUM(Global_Sales * Global_Sales) - POW(SUM(Global_Sales), 2) / COUNT(*)) * 
+	(SUM(JP_Sales * JP_Sales) - POW(SUM(JP_Sales), 2) / COUNT(*)) = 63,426,361.91
+
+SQRT((SUM(Global_Sales * Global_Sales) - POW(SUM(Global_Sales), 2) / COUNT(*)) * 
+	(SUM(JP_Sales * JP_Sales) - POW(SUM(JP_Sales), 2) / COUNT(*))) = 7,964.06
+-----------------------------------------------------------------------------------------------
+
+---------------------------------------Overall answer------------------------------------------
+ROUND((SUM(Global_Sales * JP_Sales) - SUM(Global_Sales) * SUM(JP_Sales) / COUNT(*)) / 
+    (SQRT((SUM(Global_Sales * Global_Sales) - POW(SUM(Global_Sales), 2) / COUNT(*)) * 
+	(SUM(JP_Sales * JP_Sales) - POW(SUM(JP_Sales), 2) / COUNT(*)))),3) = 0.612
