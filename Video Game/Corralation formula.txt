@@ -30,7 +30,7 @@ SQRT((SUM(Global_Sales * Global_Sales) - POW(SUM(Global_Sales), 2) / COUNT(*)) *
 	(SUM(JP_Sales * JP_Sales) - POW(SUM(JP_Sales), 2) / COUNT(*))) = 7,964.06
 -----------------------------------------------------------------------------------------------
 
----------------------------------------Overall answer------------------------------------------
+---------------------------------------Overall ------------------------------------------------
 ROUND((SUM(Global_Sales * JP_Sales) - SUM(Global_Sales) * SUM(JP_Sales) / COUNT(*)) / 
     (SQRT((SUM(Global_Sales * Global_Sales) - POW(SUM(Global_Sales), 2) / COUNT(*)) * 
 	(SUM(JP_Sales * JP_Sales) - POW(SUM(JP_Sales), 2) / COUNT(*)))),3) = 0.612
